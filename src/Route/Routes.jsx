@@ -1,0 +1,18 @@
+
+import { createBrowserRouter } from "react-router-dom";
+import MainLayout from "../MainLayout/MainLayout";
+import Navbar from "../Pages/Navbar";
+
+export const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <MainLayout></MainLayout>,
+      children: [
+        {
+          path: "/",
+          element: <Navbar></Navbar>
+        }
+      ]
+    },
+  ]);
+  
